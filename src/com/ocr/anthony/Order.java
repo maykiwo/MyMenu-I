@@ -16,7 +16,21 @@ public class Order {
      * @param nbMenu The selected menu.
      */
     public void displaySelectedMenu(int nbMenu) {
-        System.out.println("Vous avez choisi le menu " + nbMenu);
+        if (nbMenu == 1) {
+            System.out.println("Vous avez choisi le menu poulet");
+        } else if (nbMenu == 2) {
+            System.out.println("Vous avez choisi le menu boeuf");
+        } else if (nbMenu == 3) {
+            System.out.println("Vous avez choisi le menu vegetarien");
+        } else {
+            System.out.println("Vous n'avez pas choisi de menu");
+        }
+    }
+
+    /**
+     *  Run asking process for a menu
+     */
+    public void runMenu(){
 
     }
 }
